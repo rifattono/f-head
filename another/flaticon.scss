@@ -1,0 +1,65 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?6019e77ad5c087586beb1f569a21e5f5") format("truetype"),
+url("./flaticon.woff?6019e77ad5c087586beb1f569a21e5f5") format("woff"),
+url("./flaticon.woff2?6019e77ad5c087586beb1f569a21e5f5") format("woff2"),
+url("./flaticon.eot?6019e77ad5c087586beb1f569a21e5f5#iefix") format("embedded-opentype"),
+url("./flaticon.svg?6019e77ad5c087586beb1f569a21e5f5#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "loan": "\f101",
+    "agriculture": "\f102",
+    "key": "\f103",
+    "user": "\f104",
+    "talent": "\f105",
+    "responsibility": "\f106",
+    "personal": "\f107",
+    "scholarship": "\f108",
+    "loan-1": "\f109",
+    "loan-2": "\f10a",
+);
+
+.flaticon-loan:before {
+    content: map-get($flaticon-map, "loan");
+}
+.flaticon-agriculture:before {
+    content: map-get($flaticon-map, "agriculture");
+}
+.flaticon-key:before {
+    content: map-get($flaticon-map, "key");
+}
+.flaticon-user:before {
+    content: map-get($flaticon-map, "user");
+}
+.flaticon-talent:before {
+    content: map-get($flaticon-map, "talent");
+}
+.flaticon-responsibility:before {
+    content: map-get($flaticon-map, "responsibility");
+}
+.flaticon-personal:before {
+    content: map-get($flaticon-map, "personal");
+}
+.flaticon-scholarship:before {
+    content: map-get($flaticon-map, "scholarship");
+}
+.flaticon-loan-1:before {
+    content: map-get($flaticon-map, "loan-1");
+}
+.flaticon-loan-2:before {
+    content: map-get($flaticon-map, "loan-2");
+}
